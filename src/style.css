@@ -1,0 +1,27 @@
+@import "tailwindcss";
+:root {
+  --nuke: #00fdfd;
+}
+
+.bg-nuke {
+  background-color: var(--nuke);
+}
+
+.color-nuke {
+  color: var(--nuke);
+}
+
+@font-face {
+  font-family: "LEMONMILK";
+  src: url("/src/fonts/LEMONMILK-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.text-mafreidyne {
+  background-image: linear-gradient(to bottom right, #00fdfd, #1e40af);
+  background-clip: text;
+  font-family: "LEMONMILK";
+  -webkit-background-clip: text;
+  color: transparent;
+}
