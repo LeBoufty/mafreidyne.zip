@@ -18,10 +18,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Daydream";
+  src: url("/src/fonts/Daydream.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .text-mafreidyne {
   background-image: linear-gradient(to bottom right, #00fdfd, #1e40af);
   background-clip: text;
   font-family: "LEMONMILK";
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.text-minigame-title {
+  @apply text-white;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Daydream";
 }
