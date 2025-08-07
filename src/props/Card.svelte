@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { title } = $props();
+  let { title, children } = $props();
 </script>
 
 <div
@@ -8,6 +8,6 @@
   <h2 class="text-center text-zinc-100 font-bold text-2xl">{title}</h2>
   <hr class="m-4 text-zinc-600" />
   <p class="text-justify text-zinc-200">
-    <slot />
+    {@render children()}
   </p>
 </div>
